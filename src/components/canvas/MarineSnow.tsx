@@ -17,6 +17,8 @@ export default function MarineSnow({ count = 1500 }) {
   }, [count])
 
   useFrame((state, delta) => {
+    if (!mesh.current || !mesh.current.geometry.attributes.position) return
+    
     const { array } = mesh.current.geometry.attributes.position as THREE.BufferAttribute
     
     for (let i = 0; i < count; i++) {

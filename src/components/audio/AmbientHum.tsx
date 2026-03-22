@@ -53,6 +53,11 @@ export default function AmbientHum() {
     if (sound.current) {
       const targetGain = isMuted ? 0 : volume * 0.4
       sound.current.setVolume(targetGain)
+      
+      // Garante que o AudioContext seja retomado quando o usuário desmuta (US-02 AC06)
+      if (!isMuted && sound.current.context.state === 'suspended') {
+        sound.current.context.resume()
+      }
     }
   }, [volume, isMuted])
 

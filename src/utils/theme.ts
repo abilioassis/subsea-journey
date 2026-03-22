@@ -10,5 +10,5 @@ export const getThemeColor = (variableName: string): string => {
     .getPropertyValue(variableName)
     .trim();
     
-  return value || '#000000';
+  return value || '#020617';
 };
