@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Definindo a cor de marca para o Tailwind v4 */
+  --color-abyssal: #020617;
+  --color-subsea-accent: #f97316; /* O laranja da nossa sonda */
+}
+
+:root {
+  /* Variáveis que o shadcn/ui e o Three.js vão compartilhar */
+  --background-3d: var(--color-abyssal);
+  --fog-density: 0.07;
+}
+
+html, body {
+  background-color: var(--color-abyssal);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}

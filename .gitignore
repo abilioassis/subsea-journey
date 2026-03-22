@@ -17,8 +17,6 @@ pnpm-debug.log*
 .env
 .env.production
 
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
-.idea/
+# Assets pesados que trataremos com LFS depois
+public/models/*.glb
+public/videos/*.mp4
