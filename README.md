@@ -1,4 +1,4 @@
-# 🌊 Subsea Engineering Journey v2.0
+# 🌊 Subsea Engineering Journey
 
 > **Um mergulho interativo na engenharia submarina através do Three.js e IA Agêntica.**
 
